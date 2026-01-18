@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amar Lab — Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/app.js"></script>
+  <!-- Load home page script to power search, featured items and continue quiz -->
+  <script defer src="js/home.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Amar Lab Home">
+        <!-- Logo image placed before the brand name -->
+        <img class="brand-img" src="assets/images/logo.png" alt="Amar Lab logo" />
+        <span class="brand-text">Amar Lab</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Top menu">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="safety.html">Safety</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="quiz.html">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero banner using a Bangladesh-inspired cover image with logo and tagline pre-rendered -->
+    <section class="banner">
+      <img src="assets/images/banner-cover.png" alt="Amar Lab cover" class="banner-img" />
+    </section>
+
+    <!-- Search box as the primary action -->
+    <section class="search-section card">
+      <form id="homepageSearchForm" class="search-form">
+        <input id="homepageSearch" type="search" placeholder="ইকুইপমেন্ট খুঁজো…" autocomplete="off" />
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </section>
+
+    <!-- Shortcut cards for main sections -->
+    <section class="shortcut-section">
+      <div class="grid">
+        <a class="shortcut-card" href="equipment.html">
+          <div class="shortcut-icon" aria-hidden="true">🧪</div>
+          <div class="shortcut-text">ইকুইপমেন্ট লাইব্রেরি</div>
+        </a>
+        <a class="shortcut-card" href="safety.html">
+          <div class="shortcut-icon" aria-hidden="true">🛡️</div>
+          <div class="shortcut-text">ল্যাব সেফটি</div>
+        </a>
+        <a class="shortcut-card" href="quiz.html">
+          <div class="shortcut-icon" aria-hidden="true">📝</div>
+          <div class="shortcut-text">কুইজ</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Quick filter chips linking to equipment library with category filters -->
+    <section class="cat-chips">
+      <div class="chips">
+        <a class="chip" href="equipment.html?cat=physics">Physics</a>
+        <a class="chip" href="equipment.html?cat=chemistry">Chemistry</a>
+        <a class="chip" href="equipment.html?cat=biology">Biology</a>
+      </div>
+    </section>
+
+    <!-- Featured / New equipment section -->
+    <section class="section featured">
+      <div class="section-head">
+        <h2>আজকের ইকুইপমেন্ট</h2>
+      </div>
+      <div id="todayContainer" class="grid"></div>
+    </section>
+
+    <!-- Continue quiz section: hidden by default -->
+    <section id="continueSection" class="section card hidden">
+      <h2>কুইজ দিয়ে যাও</h2>
+      <a class="btn btn-secondary" href="quiz.html">কুইজ চালিয়ে যাও</a>
+    </section>
+
+    <!-- Disclaimer notice -->
+    <section class="card notice">
+      <strong>ডিসক্লেইমার:</strong>
+      <span>এই সাইটটি শিক্ষামূলক ডেমো। বাস্তব ল্যাবে সবসময় শিক্ষক বা ল্যাব সুপারভাইজারের নির্দেশনা অনুসরণ করতে হবে।</span>
+    </section>
+  </main>
+
+  <!-- Bottom navigation bar -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item"><span class="nav-ic">🏠</span><span class="nav-txt">হোম</span></a>
+    <a href="safety.html" class="nav-item"><span class="nav-ic">🛡️</span><span class="nav-txt">সেফটি</span></a>
+    <a href="equipment.html" class="nav-item"><span class="nav-ic">🧪</span><span class="nav-txt">ইকুইপমেন্ট</span></a>
+    <a href="quiz.html" class="nav-item"><span class="nav-ic">📝</span><span class="nav-txt">কুইজ</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Amar Lab — MYP</span>
+      <span class="muted">Mobile-first • বাংলা • v1</span>
+    </div>
+  </footer>
+</body>
+</html>
