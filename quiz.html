@@ -13,6 +13,11 @@
   <script defer src="js/app.js"></script>
   <!-- versioned to bust browser cache when scripts change -->
   <script defer src="js/quiz.js?v=2"></script>
+  
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+
   <!-- Embedded quiz dataset as JSON to avoid fetch issues in file:// environment -->
   <script id="quizData" type="application/json">
     {"passingScore":70,"questions":[{"question":"বীকার (Beaker) মূলত কী কাজে ব্যবহার হয়?","options":["খুব নির্ভুলভাবে ভলিউম মাপা","তরল রাখা, মেশানো, আনুমানিক মাপ নেওয়া","শুধু গুঁড়া পদার্থ ছাঁকা","শুধু তাপমাত্রা মাপা"],"answerIndex":1,"explanation":"বীকারে রাখা/মেশানো/আনুমানিক ভলিউম মাপা যায়, “একদম নির্ভুল” নয়।","category":"Physics"},{"question":"মেজারিং সিলিন্ডারে সঠিকভাবে রিডিং নিতে চোখ কোথায় রাখতে হয়?","options":["উপর থেকে তাকিয়ে","নিচ থেকে তাকিয়ে","চোখের সমতলে রেখে মেনিসকাস দেখে","দূর থেকে আন্দাজ করে"],"answerIndex":2,"explanation":"চোখের সমতলে মেনিসকাস দেখে পড়লে ভুল কম হয়।","category":"Physics"},{"question":"মেজারিং সিলিন্ডার হাতে ধরে ঝুঁকিয়ে রিডিং নেওয়া কেন ভুল?","options":["দেখতে খারাপ লাগে","তরল বেশি হয়ে যায়","ভুল রিডিং হয়","সিলিন্ডার ভারী হয়ে যায়"],"answerIndex":2,"explanation":"সমতল জায়গায় সোজা না থাকলে স্কেল ঠিকভাবে পড়া যায় না।","category":"Physics"},{"question":"থার্মোমিটারের বাল্ব অংশ কোথায় লাগানো উচিত নয়?","options":["তরলের ভেতরে","পাত্রের তলা/দেয়ালে","তরলের মাঝামাঝি","মাপার ব
